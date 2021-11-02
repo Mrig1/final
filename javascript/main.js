@@ -1,4 +1,4 @@
 const tabImages = ["images/velo01.jpg", "images/velo2.jpg", "images/velo3.jpg"];
 const monSlider = new Slide(tabImages); //instance de la classe Slide
 const myMap = new Map(43.296482, 5.36978);
-const maToile = new Toile("#canvas");
+const maToile = new Toile("canvas");
