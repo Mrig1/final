@@ -1,142 +1,93 @@
-body {
+body{
   width: auto;
   font-family: 'Roboto', sans-serif;
-  font-size: 1.2em;
-  margin: 0px;
+    font-size: 1.2em;
+    margin: auto;
+  
 }
-
-header {
+header{
   background-color: #59bbe9;
   width: 100%;
   height: 80px;
 }
-
-h1 {
+h1{
   color: black;
   font-size: 1.6em;
   font-weight: bold;
   padding-left: 30px;
   padding-top: 20px;
   margin-top: 0px;
-}
 
-#slideshow {
+}
+#diaporama{
   width: 100%;
-  height: auto;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
- .slide-velo{
-   width: 100%;
- }
-
-#tutorial {
-  height: auto; 
-  display:flex;
-  justify-content: center;
-}
-
-figure {
-  display: none;
-}
-
-img {
-  max-width: 80%;
-  height: auto;
-  margin-left: 10%;
-  margin-right: 10%;
-  justify-content: center;
-}
-#control-slider{
-  display: flex;
-justify-content: center;
-}
-
-.active {
+  height:auto;
+  padding:auto;
+  position:relative;
   display: block;
 }
-
-.fa,
-.fas {
-  width: 50px;
-  height: 50px;
-  font-size: 20px;
+#slide{
+  position:relative;
+  width:100%;
+  height: auto;
+  display:block;
+  
 }
+figure{
+  display:none;
+ 
+ 
+}
+img{
+  max-width: 60%;
+  max-height: 600px;
+  margin-left: 20%;
+  margin-right: 20%;
+}
+#left{
+  padding-left: 46%;
 
-.invisible {
+}
+.active{
+  display:block;
+}
+.fa, .fas{
+  width:50px;
+  height:50px;
+  font-size:40px;
+}
+.invisible{
   display: none !important;
 }
-
-#carte-reservation {
-  display: flex;
-  margin:50px;
+#carte-reservation{
+  display: flex; 
+  height:600px;
 }
-
-#Marseille {
-  height: 500px;
-  width: 50%;
-  margin: auto;
-  display: block;
+#Marseille{
+height: 500px;
+width:800px;
+margin:auto;
+display: block;
 }
-
-#registration {
-  display: none;
-  margin: auto;
-  max-width: 40%;
+#formulaire{
+  display:none;
+ margin:auto;
+  
+  max-width: 300px;
 }
-
-#reserver{
-  margin-top: 15px;
-}
-
-footer {
+footer{
   background-color: #59bbe9;
   width: 100%;
-  height: auto;
+  height: 80px;
   text-align: center;
-  padding-top: 45px;
+  padding-top: 45px; 
 }
-#messageUser{
-  padding-bottom: 25px;
-}
-#cancel {
+#annuler{
   display: none;
   justify-content: center;
   padding-top: 10px;
-  padding-bottom: 20px;
 }
-
-#canvas {
+#canvas{
   border: 1px solid black;
   background-color: beige;
-}
-
-@media screen and (max-width: 768px)
-{
-  #carte-reservation {
-   flex-direction: column;
-  }
-  #Marseille {
-    height: 300px;
-    width: 100%;
-  }
-  
-  #registration {
-    width: 100%;
-  }
-  #canvas {
-    width: 50%;
-  }
-  #messageUser{
-    padding-bottom: 25px;
-    padding-left: 5px;
-    padding-right:5px ;
-  }
-}
-@media screen and (max-width: 768px)
-{
-  #canvas {
-    width: 110%;
-  }
 }
