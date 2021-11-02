@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+
+<head>
+  <meta charset="utf-8" />
+  <link rel="stylesheet" href="css/style.css" />
+  <script src="https://kit.fontawesome.com/6e918820f6.js" crossorigin="anonymous"></script>
+  <meta name="viewport" content="width=device-width" />
+  <script defer src="javascript/slide.js"></script>
+  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css"
+    integrity="sha512-xodZBNTC5n17Xt2atTPuE1HxjVMSvLVW9ocqUKLsCC5CXdbqCmblAshOMAS6/keqq/sMZMZ19scR4PsZChSR7A=="
+    crossorigin="" />
+  <script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"
+    integrity="sha512-XQoYMqMTK8LvdxXYG3nZ448hOEQiglfqkJs1NOQV44cWnUrBc8PkAOcXy20w0vlaXaVUearIOBhiXZ5V3ynxwA=="
+    crossorigin=""></script>
+  <script defer src="javascript/map.js"></script>
+  <script defer src="javascript/toile.js"></script>
+  <script defer src="javascript/main.js"></script>
+</head>
+
+<body>
+  <header>
+    <h1>Velo Lib Marseille</h1>
+  </header>
+  <section id="slideshow">
+    <div id="tutorial">
+    </div>
+    <div id="control-slider">
+      <i id="left" class="fas fa-arrow-circle-left"></i>
+      <i id="play-slide" class="fas fa-play-circle"></i>
+      <i id="pause" class="fas fa-pause-circle"></i>
+      <i id="right" class="fas fa-arrow-circle-right"></i>
+    </div>
+  </section>
+  <section id="carte-reservation">
+    <div id="Marseille">
+    </div>
+    <div id="registration">
+      <h2>Détails de la station</h2>
+      <p id="station"></p>
+      <p id="adresse"></p>
+      <p id="nbre-places"></p>
+      <p id="nbre-velos-dispo"></p>
+      <form id="inscription">
+        <label for="nom">Nom :<br></label>
+        <input type="text" name="nom" id="nom" pattern="[A-Z][A-Za-z' -]{1,15}" /><br>
+        <label for="prenom">Prénom :<br></label>
+        <input type="text" name="prenom" id="prenom" pattern="[A-Z][A-Za-z' -]{1,15}" /><br>
+        <button id="reserver">Réserver</button>
+      </form><br>
+      <div id="signer">
+        <canvas id="canvas"></canvas><br>
+        <button id="effacer">Effacer</button>
+        <button id="enregistrer">Enregistrer</button>
+      </div>
+    </div>
+  </section>
+  <footer>
+    <div id="messageUser">
+    </div>
+    <div id="cancel">
+      <button>Annuler</button>
+    </div>
+  </footer>
+</body>
+
+</html>
