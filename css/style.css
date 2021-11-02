@@ -27,7 +27,7 @@ h1 {
   flex-direction: column;
 }
  .slide-velo{
-   width: 90%;
+   width: 100%;
  }
 
 #tutorial {
@@ -41,8 +41,8 @@ figure {
 }
 
 img {
-  max-width: 90%;
-  max-height: 600px;
+  max-width: 60%;
+  max-height: auto;
   margin-left: 20%;
   margin-right: 20%;
   justify-content: center;
@@ -131,5 +131,11 @@ footer {
     padding-bottom: 25px;
     padding-left: 5px;
     padding-right:5px ;
+  }
+}
+@media screen and (max-width: 768px)
+{
+  #canvas {
+    width: 110%;
   }
 }
