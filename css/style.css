@@ -42,10 +42,10 @@ figure {
 }
 
 img {
-  max-width: 60%;
+  max-width: 80%;
   height: auto;
-  margin-left: 20%;
-  margin-right: 20%;
+  margin-left: 10%;
+  margin-right: 10%;
   justify-content: center;
 }
 #control-slider{
