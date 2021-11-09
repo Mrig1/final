@@ -42,8 +42,6 @@ class Map {
     }
     //permet de faire demarrer le compteur avec timer() ou de l'arrêter avec annuler()
     timer() {
-        let name = document.getElementById("nom");
-        let surname = document.getElementById("prenom");
         let chrono = 20 * 60 * 1000;
         if (sessionStorage.getItem("tempsRestant")) {
             chrono = parseInt(sessionStorage.getItem("tempsRestant"), 10);
@@ -83,11 +81,7 @@ class Map {
     formulaire() {
 
         let reserver = document.getElementById("reserver");
-        let formulaire = document.getElementById("registration");
-        let annuler = document.getElementById("cancel");
-        let fields = document.getElementsByTagName("form");
         let infoUser = document.getElementById("messageUser");
-        let currentDate = new Date().getTime();
         let enregistrer = document.getElementById("enregistrer");
         reserver.onclick = (event) => {
         // but de l'événement: récupérer les données de la carte et du formulaire pour les stocker en sessionStorage pour le nom de la station et en localStorage pour les nom et prénom de l'utilisateur.
@@ -106,9 +100,8 @@ class Map {
             }
         }
         //but de l'événement: la signature suivie du clic sur le bouton "enregistrer" doivent déclencher le Timer et faire apparaitre un message dans le footer avec le bouton annuleren dessous; en l'absence de signature, un message apparait dans le footer et le timer ne démarre pas.
-        enregistrer.onclick = (event) => {
+        enregistrer.onclick = () => {
             if (maToile.initX != 0) {
-                let chrono = 20 * 60 * 1000;
                 this.timer();
                 document.getElementById("cancel").style.display = "block";
                 document.getElementById("registration").style.display = "none";
@@ -118,7 +111,7 @@ class Map {
         }
         //L'événement clearCanvas permet d'effacer la signature sur le canvas.
         let clearCanvas = document.getElementById("effacer")
-        clearCanvas.onclick = (event) => {
+        clearCanvas.onclick = () => {
             maToile.effacer()
         }
     }

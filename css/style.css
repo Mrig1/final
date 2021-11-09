@@ -61,18 +61,23 @@ justify-content: center;
 }
 #carte-reservation {
   display: flex;
-  margin:50px;
+  margin:5px;
+  justify-content: center;
 }
 #Marseille {
   height: 500px;
-  width: 50%;
-  margin: auto;
+  width: 60%;
+  margin: 2%;
   display: block;
 }
 #registration {
   display: none;
   margin: auto;
-  max-width: 40%;
+  width: 40%;
+}
+#adresse{
+  width:50%;
+
 }
 #reserver{
   margin-top: 15px;
@@ -105,6 +110,7 @@ footer {
   #Marseille {
     height: 300px;
     width: 100%;
+    margin:0%;
   } 
   #registration {
     width: 100%;
@@ -118,9 +124,9 @@ footer {
     padding-right:5px ;
   }
 }
-@media screen and (max-width: 768px)
+@media screen and (max-width: 320px)
 {
   #canvas {
-    width: 110%;
+    width: 100%;
   }
 }

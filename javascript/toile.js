@@ -1,5 +1,5 @@
 class Toile {
-    constructor(canvas) {
+    constructor() {
         this.signer = false; // n'est pas en train de signer
         this.initX = 0; // coordonnée X avant de cliquer pour signer (pas de tracé)
         this.initY = 0; // coordonnée Y avant de cliquer pour signer
