@@ -36,11 +36,12 @@ figure {
   display: none;
 }
 img {
-  max-width: 80%;
+  max-width: 92%;
   height: auto;
-  margin-left: 10%;
-  margin-right: 10%;
+  margin-left: 4%;
+  margin-right: 4%;
   justify-content: center;
+  border:5px blue;
 }
 #control-slider{
   display: flex;
@@ -104,6 +105,15 @@ footer {
 }
 @media screen and (max-width: 768px)
 {
+  figure{
+    margin-left: 0%;
+    margin-right: 0%;
+  }
+  img {
+    max-width: 96%;
+    margin-left: 2%;
+    margin-right: 2%; 
+  }
   #carte-reservation {
    flex-direction: column;
   }
@@ -126,6 +136,9 @@ footer {
 }
 @media screen and (max-width: 320px)
 {
+h2{
+  font-size: 15px;
+}
   #canvas {
     width: 100%;
   }
