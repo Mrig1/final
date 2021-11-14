@@ -4,11 +4,13 @@ body {
   font-size: 1.2em;
   margin: 0px;
 }
+
 header {
   background-color: #59bbe9;
   width: 100%;
   height: 80px;
 }
+
 h1 {
   color: black;
   font-size: 1.6em;
@@ -17,6 +19,7 @@ h1 {
   padding-top: 20px;
   margin-top: 0px;
 }
+
 #slideshow {
   width: 100%;
   height: auto;
@@ -24,65 +27,75 @@ h1 {
   flex-direction: column;
   align-items: center;
 }
- .slide-velo{
-   width: 100%;
- }
+
+.slide-velo {
+  width: 100%;
+}
+
 #tutorial {
-  height: auto; 
-  display:flex;
+  height: auto;
+  display: flex;
   justify-content: center;
 }
+
 figure {
   display: none;
 }
+
 img {
   max-width: 92%;
   height: auto;
   margin-left: 4%;
   margin-right: 4%;
-  justify-content: center;
-  border:5px blue;
 }
-#control-slider{
+
+#control-slider {
   display: flex;
-justify-content: center;
+  justify-content: center;
 }
 
 .active {
   display: block;
 }
+
 .fa,
 .fas {
   width: 50px;
   height: 50px;
   font-size: 20px;
 }
+
 .invisible {
   display: none !important;
 }
+
 #carte-reservation {
   display: flex;
-  margin:5px;
+  margin: 5px;
   justify-content: center;
 }
+
 #Marseille {
   height: 500px;
   width: 60%;
   margin: 2%;
   display: block;
 }
+
 #registration {
   display: none;
   margin: auto;
   width: 40%;
 }
-#adresse{
-  width:50%;
 
+#adresse {
+  width: 50%;
 }
-#reserver{
+
+#reserver {
   margin-top: 15px;
 }
+
 footer {
   background-color: #59bbe9;
   width: 100%;
@@ -90,55 +103,65 @@ footer {
   text-align: center;
   padding-top: 45px;
 }
-#messageUser{
+
+#messageUser {
   padding-bottom: 25px;
 }
+
 #cancel {
   display: none;
   justify-content: center;
   padding-top: 10px;
   padding-bottom: 20px;
 }
+
 #canvas {
   border: 1px solid black;
   background-color: beige;
 }
-@media screen and (max-width: 768px)
-{
-  figure{
+
+@media screen and (max-width: 768px) {
+  figure {
     margin-left: 0%;
     margin-right: 0%;
   }
+
   img {
     max-width: 96%;
     margin-left: 2%;
-    margin-right: 2%; 
+    margin-right: 2%;
   }
+
   #carte-reservation {
-   flex-direction: column;
+    flex-direction: column;
   }
+
   #Marseille {
     height: 300px;
     width: 100%;
-    margin:0%;
-  } 
+    margin: 0%;
+  }
+
   #registration {
     width: 100%;
   }
+
   #canvas {
     width: 50%;
   }
-  #messageUser{
+
+  #messageUser {
     padding-bottom: 25px;
     padding-left: 5px;
-    padding-right:5px ;
+    padding-right: 5px;
   }
 }
-@media screen and (max-width: 320px)
-{
-h2{
-  font-size: 15px;
-}
+
+@media screen and (max-width: 320px) {
+  h2 {
+    font-size: 15px;
+  }
+
   #canvas {
     width: 100%;
   }
