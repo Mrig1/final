@@ -37,7 +37,7 @@ class Slide {
 			this.figure[this.index].classList.add('active')
 		}, this.speed);
 	}
-	/*faire fonctionner la flèche gauche pour revenir à l'image précédente*/
+	//faire fonctionner la flèche gauche pour revenir à l'image précédente
 	leftArrow() {
 		this.previous.addEventListener("click", () => {
 			this.figure[this.index].classList.remove('active');
@@ -50,8 +50,8 @@ class Slide {
 			}
 		});
 	}
-	/*faire fonctionner la flèche droite pour passer à l'image suivante*/
-	rightArrow() {	
+	//faire fonctionner la flèche droite pour passer à l'image suivante
+	rightArrow() {
 		this.next.addEventListener("click", () => {
 			this.figure[this.index].classList.remove('active');
 			this.index++;
@@ -61,7 +61,7 @@ class Slide {
 			this.figure[this.index].classList.add('active');
 		});
 	}
-	/*mettre le diaporama en pause*/
+	//mettre le diaporama en pause
 	pauseSlide() {
 		this.pause.addEventListener("click", () => {
 			this.pause.classList.add('invisible');
@@ -69,7 +69,7 @@ class Slide {
 			clearInterval(this.intervalle);
 		});
 	}
-	/*reprendre le défilement des images après une pause*/
+	//reprendre le défilement des images après une pause
 	playSlide() {
 		this.play.addEventListener("click", () => {
 			this.autoPlay();

@@ -84,19 +84,20 @@ class Map {
         let infoUser = document.getElementById("messageUser");
         let enregistrer = document.getElementById("enregistrer");
         reserver.onclick = (event) => {
-        // but de l'événement: récupérer les données de la carte et du formulaire pour les stocker en sessionStorage pour le nom de la station et en localStorage pour les nom et prénom de l'utilisateur.
+            // but de l'événement: récupérer les données de la carte et du formulaire pour les stocker en sessionStorage pour le nom de la station et en localStorage pour les nom et prénom de l'utilisateur.
             event.preventDefault();
             let name = document.getElementById("nom");
             let surname = document.getElementById("prenom");
             sessionStorage.setItem("nomStation", this.nomStation.textContent);
             localStorage.setItem("nom", name.value);
             localStorage.setItem("prenom", surname.value);
-          
+
             if (this.velosDispo.dataset.bikesAvailable < 1) {
                 infoUser.innerHTML = `Aucun vélo n'est disponible pour le moment à la station ${this.nomStation.textContent}, réessayez plus tard`;
             } else if (name.checkValidity() && surname.checkValidity() && this.velosDispo.dataset.bikesAvailable) {
                 document.getElementById("signer").style.display = "block";
-            } else {infoUser.innerHTML = `Champ invalide: Commencez par une majuscule et ne dépassez pas 15 caractères.`;
+            } else {
+                infoUser.innerHTML = `Champ invalide: Commencez par une majuscule et ne dépassez pas 15 caractères.`;
             }
         }
         //but de l'événement: la signature suivie du clic sur le bouton "enregistrer" doivent déclencher le Timer et faire apparaitre un message dans le footer avec le bouton annuleren dessous; en l'absence de signature, un message apparait dans le footer et le timer ne démarre pas.
