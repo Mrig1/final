@@ -19,7 +19,7 @@ class Slide {
 		this.pauseSlide();
 		this.playSlide();
 	}
-	// fait apparaître les images avac displaySlide() les unes après les autres, en boucle toutes les 5 secondes avec autoPlay()
+	// fait apparaître les images lorsqu'elles ont  la classe .active dans css
 	displaySlide() {
 		for (let i = 0; i < this.images.length; i++) {
 			this.slide.innerHTML += `<figure class="slide-velo"><img src="${this.images[i]}" alt="f"/></figure>`;
@@ -27,6 +27,7 @@ class Slide {
 		let figure = document.querySelectorAll(".slide-velo");
 		figure[this.index].classList.add('active')
 	}
+	//Cette méthode fait apparaitre les images les unes après les autres toutes les 5 secondes
 	autoPlay() {
 		this.intervalle = setInterval(() => {
 			this.figure[this.index].classList.remove('active');
