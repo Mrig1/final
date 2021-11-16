@@ -6,7 +6,7 @@ class Toile {
         this.canvas = document.getElementById("canvas");
         this.ctx = this.canvas.getContext("2d");
         this.ctx.strokeStyle = 'black';
-        this.ctx.linewidth = 2;
+        this.ctx.linewidth = 4;
         this.canvas.addEventListener("mousedown", (e) => {
             this.signer = true; // est en train de signer
             this.initX = e.clientX - this.canvas.offsetLeft; //position de x moins nombre de pixel sur horizontale x (au départ du clic)

@@ -96,6 +96,10 @@ img {
   margin-top: 15px;
 }
 
+#signer{
+  margin-bottom: 10px;
+}
+
 footer {
   background-color: #59bbe9;
   width: 100%;
@@ -148,6 +152,7 @@ footer {
 
   #canvas {
     width: 50%;
+    
   }
 
   #messageUser {
